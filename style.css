@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
+
+    &:focus {
+        outline: none;
+    }
 }
-body{
+body {
     height: 100vh;
     background-color: #F1EFEC;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.content{
+.content {
     margin: 0 auto;
     width: 60%;
     height: 70%;
-    padding: 20px;
+    padding: 15px;
     display: flex;
 
     background-color: #FCFCFC;
@@ -30,108 +34,124 @@ body{
 
 }
 
-.boxOne img{
+.box-image img {
     border-radius: 15px;
     height: 100%;
     
 }
 
-.boxTwo{
+.box-account {
     width: 100%;
     height: 100%;
+    padding: 15px;
     font-weight: 600;
 
+    .signUp {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+    
+        p {
+            color: gray;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    } 
+    
 }
-.signUp{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
-    font-size: 12px;
 
-}
-.signUp p{
-    color: gray;
-}
-.signUp a{
-    text-decoration: none;
-    color: black;
-}
 
-
-.boxInfoContainer{
+.boxInfoContainer {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.boxInfo{
+.boxInfo {
     width: 100%;
     max-width: 300px;
     display: flex;
     flex-direction: column;
 }
-.boxInfoOne .boxText h2{
-    margin: 0 0 26px 0;
-    font-size: 45px;
+
+.boxInfoOne {
+    .boxText {
+        h2 {
+            margin: 0 0 26px 0;
+            font-size: 45px;
+        }
+
+    }
+    .boxButton {
+        display: flex;
+        gap: 7px;
+
+        button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0 8px 0;
+            padding: 6px 6px;
+            background-color: transparent;
+            gap: 7px;
+            border: solid 1.5px rgb(226, 224, 224);
+            border-radius: 8px;
+        }
+        button {
+            .fa-brands {
+                font-size: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
-.boxText p{
+
+.boxText p {
     font-size: 12px;
     margin: 0;
 }
 
 
-.boxInfoOne .boxButton{
-    display: flex;
-    gap: 7px;
-}
-.boxInfoOne .boxButton button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0 8px 0;
-    padding: 6px 6px;
-    background-color: transparent;
-    gap: 7px;
-    border: solid 1.5px rgb(226, 224, 224);
-    border-radius: 8px;
-}
-.boxInfoOne .boxButton button .fa-brands{
-    font-size: 20px;
-}
-.boxInfoOne .boxButton button p{
-    margin: 0;
-}
-
-hr{
+hr {
     margin: 26px 0;
     width: 100%;
     border: solid 0.5px rgb(230, 230, 230);
 }
 
-.boxInfoTwo .boxText{
-    margin: 8px 0 20px 0;
-}
-
-
-.boxForm .boxInput{
-    margin: 13px 0;
-}
-
-.boxForm .boxInput input{
-    padding: 12px 10px;
-    background-color: #F4F4F4;
-    border-radius: 8px;
-}
-.boxForm button{
-    background-color: #0C68E9;
-    color: #FFFFFF;
-    padding: 10px 0;
-    border-radius: 40px;
-}
-
-.boxForm input, .boxForm button{
-    width: 100%;
-    border: none;
+.boxInfoTwo {
+    .boxText {
+        margin: 8px 0 20px 0;
+    }
+    .boxForm {
+        .boxInput {
+            display: flex;
+            align-items: center;
+            margin: 13px 0;
+            padding-left: 10px;
+            background-color: #F4F4F4;
+            border-radius: 8px;
+        }
+        .boxInput input {
+            padding: 12px 10px;
+            background-color: transparent;
+        }
+        button {
+            background-color: #0C68E9;
+            color: #FFFFFF;
+            padding: 10px 0;
+            border-radius: 40px;
+        }
+        
+        input, button {
+            width: 100%;
+            border: none;
+        }
+    }
 }
