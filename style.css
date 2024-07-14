@@ -33,15 +33,18 @@ body {
     border-radius: 15px;
 
 }
-
+.box-image{
+    width: 40%;
+}
 .box-image img {
     border-radius: 15px;
     height: 100%;
-    
+    width: 100%;
+    object-fit: cover;
 }
 
 .box-account {
-    width: 100%;
+    width: 60%;
     height: 100%;
     padding: 15px;
     font-weight: 600;
@@ -153,5 +156,13 @@ hr {
             width: 100%;
             border: none;
         }
+    }
+
+    .boxForm button{
+        transition: all 0.5s;
+    }
+    .boxForm button:hover{
+        transform: scale(1.05);
+        transition: all 0.5s;
     }
 }
