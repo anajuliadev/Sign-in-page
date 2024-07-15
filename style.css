@@ -10,9 +10,19 @@
         outline: none;
     }
 }
+
+:root{
+    --background-light: #F1EFEC;
+    --background-dark: #000000;
+
+    --content-light: #FCFCFC;
+    --content-dark: #1f1f1f;
+}
+
+
 body {
     height: 100vh;
-    background-color: #F1EFEC;
+    background-color: var(--background-light);
 }
 
 .container {
@@ -29,7 +39,7 @@ body {
     padding: 15px;
     display: flex;
 
-    background-color: #FCFCFC;
+    background-color: var(--content-light);
     border-radius: 15px;
 
 }
